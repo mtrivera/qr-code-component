@@ -1,3 +1,46 @@
+body {
+  background: hsl(212, 45%, 89%);
+  font-family: 'Outfit', sans-serif;
+}
+
+/* TODO: Needs work, probably flexbox */
+
+.container {
+  width: 10%;
+  margin: 0 auto;
+
+}
+
+/*
+ * Card Styles
+ */
+
+.card {
+  width: 232px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.card-image {
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.card-title--text {
+  font-weight: 700;
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card-copy--text {
+  margin: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+/* Attribution style */
+
 .attribution {
   font-size: 11px;
   text-align: center;
