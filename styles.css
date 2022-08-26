@@ -1,14 +1,23 @@
+:root {
+  font-size: calc((var(--base) / 16) * 100%);
+  --r15: calc((15 / var(--base) * 1rem));
+  --r20: calc((20 / var(--base) * 1rem));
+  --base: 16;
+  --card-copy-color: hsl(220, 15%, 55%);
+  --main-bg-color: hsl(212, 45%, 89%);
+}
+
 body {
-  background: hsl(212, 45%, 89%);
+  background: var(--main-bg-color);
   font-family: 'Outfit', sans-serif;
 }
 
-/* TODO: Needs work, probably flexbox */
-
 .container {
-  width: 10%;
-  margin: 0 auto;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
 }
 
 /*
@@ -16,36 +25,31 @@ body {
  */
 
 .card {
-  width: 232px;
+  width: 280px;
+  padding-top: 0.50rem;
   border-radius: 10px;
   background: #fff;
 }
 
-.card-image {
+.card-header__image {
+  width: 240px;
+  height: 240px;
   margin: 1rem;
+  object-fit: cover;
   border-radius: 10px;
 }
 
-.card-title--text {
+.card-title__text {
+  font-size: var(--r20);
+  line-height: 1.5rem;
   font-weight: 700;
   margin: 0 1rem;
   margin-bottom: 1rem;
-  text-align: center;
 }
 
-.card-copy--text {
-  margin: 1rem;
-  padding-bottom: 1rem;
-  text-align: center;
-}
-
-/* Attribution style */
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.card-copy__text {
+  color: var(--card-copy-color);
+  font-size: var(--r15);
+  font-weight: 400;
+  margin: 1rem 1rem 3rem 1rem;
 }
