@@ -69,5 +69,5 @@ Also, I created a responsive layout:
 
 ## Author
 
-- Website - [Miguel T Rivera](https://www.your-site.com)
+- Website - [Miguel T Rivera](https://mtrivera.github.io)
 - Frontend Mentor - [@mtrivera](https://www.frontendmentor.io/profile/mtrivera)
